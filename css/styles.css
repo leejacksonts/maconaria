@@ -116,5 +116,27 @@ header, .navbar {
     border-radius: 10px;
   }
 
+/* CSS existente */
+
+@media (max-width: 767px) {
+  .navbar-brand {
+    font-size: 16px; /* Ajusta o tamanho do texto da marca no celular */
+    white-space: nowrap; /* Evita quebra de linha no título */
+    overflow: hidden;
+    text-overflow: ellipsis; /* Adiciona reticências ao final do texto */
+  }
+
+  .carousel-caption {
+    display: block !important; /* Garante que a legenda seja exibida em telas pequenas */
+  }
+
+  .carousel-caption h2 {
+    font-size: 18px; /* Ajusta o tamanho do texto do título da imagem no celular */
+  }
+
+  .carousel-caption p {
+    font-size: 14px; /* Ajusta o tamanho do texto da legenda no celular */
+  }
+}
 
   
