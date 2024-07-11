@@ -16,6 +16,8 @@ p, li {
 
 .container {
     padding: 70px 0;
+    padding-bottom: 0px;
+    padding-top: 25px;
 }
 
 /* Estilos da barra de navegação */
