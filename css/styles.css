@@ -1,6 +1,13 @@
-/*gerais*/
+/* Estilos gerais */
 body {
-    font-family: "Roboto";
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+p, li {
+    color: #444;
+    font-size: 14px;
 }
 
 .row {
@@ -11,11 +18,7 @@ body {
     padding: 70px 0;
 }
 
-p, li {
-    color: #444;
-    font-size: 14px;
-}
-/*barra de navegação*/
+/* Estilos da barra de navegação */
 header, .navbar {
     background-color: #353d41;
     padding-bottom: 0;
@@ -24,17 +27,16 @@ header, .navbar {
 #nav-container {
     padding-top: 0;
     padding-bottom: 0;
-    color: #fff
+    color: #fff;
 }
 
 #logo {
     width: 100px;
-    
 }
 
 .navbar-brand {
     padding: 0;
-    color: #fff
+    color: #fff;
 }
 
 .navbar-brand:hover {
@@ -42,46 +44,48 @@ header, .navbar {
 }
 
 #navbar-links a {
-    color: #fff
+    color: #fff;
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
-    padding: 1rem .8rem
+    padding: 1rem .8rem;
 }
+
 .navbar-toggler-icon {
     color: #fff;
 }
 
-/* Altera a cor de fundo do botão */
 #custom-toggler {
-    background-color: #333; /* Escolha a cor que você quiser */
-  }
-  
-  /* Altera a cor do ícone do menu sanduíche */
-  #custom-toggler .navbar-toggler-icon {
+    background-color: #333;
+}
+
+#custom-toggler .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
-  }
-  
-/*slider*/
+}
+
+/* Estilos do slider */
 .carousel-item img {
     width: 100%;
-    height: 600px; /* Ajuste esta altura conforme necessário */
-    object-fit: cover; /* Isso garante que a imagem cubra o contêiner sem distorção */
-  }
-.container-fluid {
-    padding: 0;
+    height: 600px;
+    object-fit: cover;
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 10px;
 }
 
 #mainSlider .carousel-caption {
-    top: 30%
+    top: 30%;
 }
 
-#mainSlider .carousel-caption h2{
+#mainSlider .carousel-caption h2 {
     font-size: 50px;
     margin-bottom: 30px;
 }
 
-#mainSlider .carousel-caption p{
+#mainSlider .carousel-caption p {
     font-size: 22px;
     font-weight: 300;
     margin-bottom: 100px;
@@ -97,7 +101,7 @@ header, .navbar {
     padding: 10px 20px;
     border-radius: 30px;
     border: 3px solid transparent;
-  transition: .5s;
+    transition: .5s;
 }
 
 .main-btn:hover {
@@ -106,37 +110,69 @@ header, .navbar {
     background-color: transparent;
     border-color: #65daf9;
 }
+
 .carousel-indicators .active {
     background-color: #65daf9;
 }
-/* transparencia no carrosel para melhorar legibilidade*/
-.carousel-caption {
-    background-color: rgba(0, 0, 0, 0.5); 
-    padding: 10px;
-    border-radius: 10px;
-  }
 
-/* CSS existente */
-
+/* Estilos para dispositivos móveis */
 @media (max-width: 767px) {
-  .navbar-brand {
-    font-size: 16px; /* Ajusta o tamanho do texto da marca no celular */
-    white-space: nowrap; /* Evita quebra de linha no título */
-    overflow: hidden;
-    text-overflow: ellipsis; /* Adiciona reticências ao final do texto */
-  }
+    .navbar-brand {
+        font-size: 16px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
 
-  .carousel-caption {
-    display: block !important; /* Garante que a legenda seja exibida em telas pequenas */
-  }
+    .carousel-caption {
+        display: block !important;
+    }
 
-  .carousel-caption h2 {
-    font-size: 18px; /* Ajusta o tamanho do texto do título da imagem no celular */
-  }
+    .carousel-caption h2 {
+        font-size: 18px;
+    }
 
-  .carousel-caption p {
-    font-size: 14px; /* Ajusta o tamanho do texto da legenda no celular */
-  }
+    .carousel-caption p {
+        font-size: 14px;
+    }
 }
 
-  
+/* Estilos específicos para as seções */
+#about-area, #historia-area {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+}
+
+#about-area h3, #historia-area h3 {
+    margin-top: 20px;
+    color: #285a68;
+}
+
+#about-area img, #historia-area img {
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+#about-area p, #historia-area p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+}
+
+.main-title {
+    position: relative;
+    text-align: center;
+    padding-bottom: 10px;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.main-title::after {
+    content: "";
+    display: block;
+    border-top: 3px solid #333;
+    width: 30%;
+    margin: 0 auto;
+    position: relative;
+    top: 2px;
+}
